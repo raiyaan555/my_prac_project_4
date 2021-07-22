@@ -2,6 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'item_desc.dart';
+
 
 class ItemList extends StatelessWidget {
 
@@ -12,13 +14,14 @@ class ItemList extends StatelessWidget {
   ItemList(this.url, this.name, this.price);
 
 
-
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: (){
-        print('Aditya Screen'); //-----------------------------------------------------------------------------------------Aditya Screen Connect-----------------------------------------------------------
+         //-----------------------------------------------------------------------------------------Aditya Screen Connect-----------------------------------------------------------
+        Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
+          return Item_desc(url,name,price);
+        }));
       },
       child: Container(
         decoration: BoxDecoration(
@@ -66,8 +69,6 @@ class ItemList extends StatelessWidget {
                ),
       ),
     );
-
-
   }
 }
 

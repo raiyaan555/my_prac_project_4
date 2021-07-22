@@ -14,7 +14,7 @@ class InvoiceList extends StatefulWidget{
   String color;
   String size;
 
-  InvoiceList({this.imageUrl="",this.name="",this.price="",this.color="",this.size=""});
+  InvoiceList(this.imageUrl,this.name,this.price,this.color,this.size);
 
 
   _InvoiceListState createState() => _InvoiceListState();
