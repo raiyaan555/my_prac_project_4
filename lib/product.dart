@@ -18,8 +18,11 @@ class Display extends StatefulWidget {
 class _DisplayState extends State<Display> {
   bool checkColor1 = false, checkColor2 = false, checkColor3 = false;
   bool checkColor7 = false, checkColor8 = false, checkColor9 = false, checkColor10 = false, checkColor11 = false;
-  String color_name ='';
-  String shoe_size = '';
+
+  String color_name ='Amber';
+
+  String shoe_size = 'US 7';
+
 
   @override
   Widget build(BuildContext context) {

@@ -23,9 +23,6 @@ class _HomeState extends State<Home> {
   ];
 
 
-
-
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -63,7 +60,6 @@ class _HomeState extends State<Home> {
 
           ),
         ],
-
       ),
       body: Column(
         children: [
@@ -98,7 +94,7 @@ class _HomeState extends State<Home> {
       onPressed: (){
       //  ---------------------------------------------------------------------------------------------------Show Yuvraj's Screen-----------------------------------------------------------------------------
       Navigator.push(context, MaterialPageRoute(builder: (BuildContext context){
-        return InvoiceList('','','','','');
+        return InvoiceList('','','0.0','','');
       }));
       },
       backgroundColor: Colors.blue[900],
